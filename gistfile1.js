@@ -90,9 +90,7 @@
 
 
             //Le damos acceso directo a los metodos publicos (mediante $(".graph-bar-container").hola("metodoPublico"))
-                if (typeof options == 'string') {
-        data[options].apply(this, args);
-      }
+            if (typeof options == 'string') data[options].apply(this, args);
 
         })
     };
