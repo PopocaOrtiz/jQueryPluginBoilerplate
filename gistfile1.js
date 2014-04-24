@@ -71,6 +71,10 @@
     //-----------------------------------------------------------
     $.fn.nombreDelPlugin = function (options) {
 
+  // Posibles argumentos (para metodos publicos)
+    var args = Array.prototype.slice.call(arguments);
+    args.shift();
+
         //nos areguramos de aplicar nuestro plugin a todos los elementos que hayamos
         //seleccionado cuando hacemos $(".todosEstos").nombreDelPlugin();
         return this.each(function () {
@@ -84,8 +88,11 @@
             //Si no existe una instancia, le asignamos una
             if (!data) $element.data("nombreDelPlugin", (data = new Class(this, options)));
 
+
             //Le damos acceso directo a los metodos publicos (mediante $(".graph-bar-container").hola("metodoPublico"))
-            if (typeof options == 'string') data[options]()
+                if (typeof options == 'string') {
+        data[options].apply(this, args);
+      }
 
         })
     };
