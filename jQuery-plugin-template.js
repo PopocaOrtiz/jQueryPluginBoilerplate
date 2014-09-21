@@ -1,12 +1,9 @@
-/* ==========================================================
+/* ====================================================
  * jQuery plugin template ("boilerplate")
- * http://e-capy.com/jQuery-plugin-template
- * https://gist.github.com/capynet/1e483c6ed520f4a1e2b0
- * ==========================================================
- * Marcelo Iván Tosco
- *
+ * https://github.com/capynet/jQueryPluginBoilerplate
  * jQuery 1.3+
- * ========================================================== */
+ * Marcelo Iván Tosco (capynet)
+ * ==================================================== */
 !function ($) {
 
     // Indicamos que se estricto en los errores.
