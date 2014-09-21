@@ -1,0 +1,4 @@
+jQueryPluginBoilerplate
+=======================
+
+jQuery plugin boilerplate 
