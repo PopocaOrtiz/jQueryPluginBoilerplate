@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="es">
+    <meta charset="UTF-8">
+    <title>jQuery boilerplate usage example</title>
+
+    <link rel="stylesheet" href="css/demo.css"/>
+
+    <script type="application/javascript" src="js/jquery.js"></script>
+    <script type="application/javascript" src="js/jquery.demojQueryPlugin.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            var $elemento = $('ul');
+
+
+            $('a.instanciar').click(function (e) {
+                e.preventDefault();
+
+                $elemento.demojQueryPlugin({
+                    background: 'red',
+                    bold: true
+                });
+
+            });
+
+
+            $('a.cambiar-color').click(function (e) {
+                e.preventDefault();
+                $elemento.demojQueryPlugin('cambiarColor', 'purple');
+            });
+
+
+        });
+    </script>
+
+</head>
+<body>
+
+<h1>Ejemplo</h1>
+
+<p>En este ejemplo tenemos una lista de elementos.</p>
+
+<p>Al aplicarle el plugin lo unico que hace es ponerle un color de fondo a los &lt;li&gt;</p>
+
+<p>Para mas detalles miren el código.</p>
+<ul>
+    <li>Lorem ipsum dolor.</li>
+    <li>Lorem ipsum dolor.</li>
+    <li>Lorem ipsum dolor.</li>
+    <li>Lorem ipsum dolor.</li>
+</ul>
+
+<a href="#" class="instanciar">Aplicar plugin</a>
+<a href="#" class="cambiar-color">Cambiar color (Usa el método publico del plugin .cambiarColor())</a>
+
+</body>
+</html>

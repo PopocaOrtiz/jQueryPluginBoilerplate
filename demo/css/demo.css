@@ -1,0 +1,19 @@
+body {
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    background: black;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+a {
+    display: block;
+}

@@ -7,7 +7,6 @@
  *
  * jQuery 1.3+
  * ========================================================== */
-
 !function ($) {
 
     // Indicamos que se estricto en los errores.
@@ -36,7 +35,7 @@
 
         // Sobreescribimos cualquier opciÓn por defecto que el usuario haya decidido especificar
         // y las guardamos el resultado en "options" para poder usarlas internamente
-        this.options = $.extend(options, defaults);
+        this.options = $.extend(defaults, options);
 
         //inicializamos nuestro plugin
         init();
