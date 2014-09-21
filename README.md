@@ -11,6 +11,8 @@ Es totalmente compatible con jQuery 1.3 para arriba. Lo he testeado hasta la ver
 
 Su uso viene documentado dentro de la plantilla misma (jQuery-plugin-template.js)
 
+Disponen también de una versión sin comentarios (jQuery-plugin-template-without-comments.js)
+
 Pueden ver un ejemplo de su funcionamiento en el demo del proyecto.
 
 Happy coding!
